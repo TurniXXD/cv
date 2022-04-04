@@ -1,0 +1,141 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[sfdefault]{ClearSans}
+\usepackage[T1]{fontenc}
+\usepackage[left=25mm,right=25mm,top=20mm,bottom=25mm]{geometry}
+\usepackage[czech]{babel}
+\usepackage{titling}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage[list=true]{subcaption}
+\usepackage{acronym}
+\usepackage{setspace}
+\usepackage{indentfirst}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{sectsty}
+\usepackage{changepage}
+
+\colorlet{bluepurple}{black!38!red}
+
+\makeatletter
+\newcommand{\globalcolor}[1]{\color{#1}\global\let\default@color\current@color}
+\makeatother
+
+\sectionfont{\color{bluepurple}}
+
+\graphicspath{ {./img/} }
+
+\onehalfspacing
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.1em}
+
+\title{cv}
+\author{Jakub Vantuch}
+
+\AtBeginDocument{\globalcolor{darkgray}}
+
+\begin{document}
+
+\vbox to -1cm{\hfill\includegraphics[height=5.125cm]{me.jpeg}}
+
+\section*{{\Huge Jakub Vantuch}}
+\section*{{\LARGE React Developer}}
+
+\begin{adjustwidth}{-4mm}{25mm}
+  \raisebox{-1.3\height}{
+    \begin{tabular}{ l l }
+      \href{https://github.com/TurniXXD}{
+      \begin{tabular}{ c c }
+          \raisebox{-.2\height}{\includegraphics[height=16pt]{github.png}} &
+          TurniXXD
+        \end{tabular}} &
+      \href{https://vantuch.dev/about.html}{
+      \begin{tabular}{ c c }
+          \raisebox{-.2\height}{\includegraphics[height=16pt]{web.png}} &
+          vantuch.dev
+        \end{tabular}} \\
+      \href{mailto:contact@vantuch.dev}{
+      \begin{tabular}{ c c }
+          \raisebox{-.6\height}{\includegraphics[height=16pt]{mail.png}} &
+          \raisebox{-.6\height}{contact@vantuch.dev}
+        \end{tabular}} &
+      \href{mailto:contact@vantuch.dev}{
+        \begin{tabular}{ c c }
+          \raisebox{-.6\height}{\includegraphics[height=16pt]{phone.png}} &
+          \raisebox{-.6\height}{735 023 812}
+        \end{tabular}}
+    \end{tabular}}
+\end{adjustwidth}
+
+\section*{Dovednosti}
+
+\begin{center}
+  \begin{tabular}{ l l l }
+    \textbf{\large Jazyky} & \textbf{\large Databáze} & \textbf{\large Operační
+      systémy}
+    \\
+    HTML                   & MySQL                    & Linux
+    \\
+    CSS                    & PostgreSQL               & Arch
+    \\
+    JS                     & MongoDB                  & Debian
+    \\
+    TS
+    \\
+    GO
+    \\
+    LaTeX
+    \\
+  \end{tabular}
+\end{center}
+
+\section*{Vzdělání}
+
+\begin{itemize}
+  \item 2018 - 2022 Střední průmyslová škola, Obchodní akademie a
+        Jazyková škola,
+        Frýdek-Místek, příspěvková organizace
+\end{itemize}
+
+\section*{Profesionální praxe}
+\begin{itemize}
+  \item \href{https://www.prorocketeers.com/}{ProRocketeers} 2021 - současnost
+        \subitem Junior React Developer na DPP
+\end{itemize}
+
+\section*{Další praxe}
+
+\begin{itemize}
+  \item Erasmus+
+  \item Soutěž CanSat
+  \item Soutěž SOČ
+  \item Soutěž KyberSTOČ
+\end{itemize}
+
+\section*{Certifikace}
+
+\begin{itemize}
+  \item ECDL
+  \item Europass Mobility
+  \item Cisco IT Essentials
+\end{itemize}
+
+\section*{Jazykové znalosti}
+
+\begin{itemize}
+  \item Angličtina - B2
+  \item Němčina - A1
+\end{itemize}
+
+\section*{Zájmy a vlastnosti}
+
+\begin{itemize}
+  \item Hra na elektrickou / akustickou / basovou kytaru, kapela, kondiční běh,
+        turistika, instruktor turistického oddílu
+  \item Nadhled, kreativita, důslednost, vytrvalost
+\end{itemize}
+
+\end{document}

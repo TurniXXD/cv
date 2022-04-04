@@ -1,0 +1,12 @@
+# LaTeX
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+*.log
+*.fls
+*.aux
+*.toc
+__latexindent_temp.tex
